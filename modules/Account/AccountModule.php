@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Account;
 
-use Ironflow\Module\Attributes\Module;
-use Ironflow\Module\BaseModule;
+use Marrow\Module\Attributes\Module;
+use Marrow\Module\BaseModule;
 
 /**
  * Owns the User model, the RBAC/2FA/audit-log schema, and the roles seeder.

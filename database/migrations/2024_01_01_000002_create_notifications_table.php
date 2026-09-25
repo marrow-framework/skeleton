@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-use Ironflow\Database\Migrations\Migration;
-use Ironflow\Database\Schema\Schema;
-use Ironflow\Database\Schema\Table;
+use Marrow\Database\Migrations\Migration;
+use Marrow\Database\Schema\Schema;
+use Marrow\Database\Schema\Table;
 
 /**
- * Backs Ironflow\Notifications\NotificationManager's 'database' channel
+ * Backs Marrow\Notifications\NotificationManager's 'database' channel
  * (config/notifications.php → 'table'). created_at/read_at are Unix
  * timestamps written as plain integers, matching NotificationManager.
  */

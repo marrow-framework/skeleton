@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Database\Seeders;
 
-use Ironflow\Database\Seeder;
+use Marrow\Database\Seeder;
 use Modules\Account\Database\Seeders\RolesTableSeeder;
 
 /**

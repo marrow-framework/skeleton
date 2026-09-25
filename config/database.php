@@ -8,7 +8,7 @@ return [
     |--------------------------------------------------------------------------
     | Default connection
     |--------------------------------------------------------------------------
-    | Ironflow\Database\Connection wraps a single Doctrine DBAL connection —
+    | Marrow\Database\Connection wraps a single Doctrine DBAL connection —
     | there is no multi-connection manager, so this whole file *is* the
     | connection's parameters.
     |

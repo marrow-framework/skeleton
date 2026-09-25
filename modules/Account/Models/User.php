@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Account\Models;
 
-use Ironflow\Auth\Concerns\Auditable;
-use Ironflow\Auth\Concerns\HasPermission;
-use Ironflow\Auth\Concerns\HasRole;
-use Ironflow\Auth\Concerns\HasTwoFactor;
-use Ironflow\Database\Model;
+use Marrow\Auth\Concerns\Auditable;
+use Marrow\Auth\Concerns\HasPermission;
+use Marrow\Auth\Concerns\HasRole;
+use Marrow\Auth\Concerns\HasTwoFactor;
+use Marrow\Database\Model;
 
 /**
  * The default authenticatable model — matches config/auth.php's
@@ -71,7 +71,7 @@ class User extends Model
     /**
      * Auditable's auditCreated()/auditUpdated()/auditDeleted() are never
      * called automatically by Model — there is no shipped
-     * Ironflow\Events\Model\{Created,Updated,Deleted} event class for
+     * Marrow\Events\Model\{Created,Updated,Deleted} event class for
      * fireEvent() to dispatch (see docs/database.md#model-events) — so
      * without overriding save()/delete() here, the audit_logs table this
      * module migrates would never actually receive a row.

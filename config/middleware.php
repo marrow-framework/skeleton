@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-use Ironflow\Middleware\Authenticate;
-use Ironflow\Middleware\HandleCors;
-use Ironflow\Middleware\MaintenanceMode;
-use Ironflow\Middleware\RedirectIfAuthenticated;
-use Ironflow\Middleware\RequestLogger;
-use Ironflow\Middleware\SanitizeInput;
-use Ironflow\Middleware\SecurityHeaders;
-use Ironflow\Middleware\ShareErrorsFromSession;
-use Ironflow\Middleware\StartSession;
-use Ironflow\Middleware\ThrottleRequests;
-use Ironflow\Middleware\TrimStrings;
-use Ironflow\Middleware\VerifyCsrfToken;
+use Marrow\Middleware\Authenticate;
+use Marrow\Middleware\HandleCors;
+use Marrow\Middleware\MaintenanceMode;
+use Marrow\Middleware\RedirectIfAuthenticated;
+use Marrow\Middleware\RequestLogger;
+use Marrow\Middleware\SanitizeInput;
+use Marrow\Middleware\SecurityHeaders;
+use Marrow\Middleware\ShareErrorsFromSession;
+use Marrow\Middleware\StartSession;
+use Marrow\Middleware\ThrottleRequests;
+use Marrow\Middleware\TrimStrings;
+use Marrow\Middleware\VerifyCsrfToken;
 
 return [
 
@@ -37,7 +37,7 @@ return [
     |--------------------------------------------------------------------------
     | Short names usable in ->middleware('auth') or a group's 'middleware'
     | attribute. Both the Router and the Kernel resolve through the same
-    | Ironflow\Middleware\MiddlewareResolver, so aliases work identically in
+    | Marrow\Middleware\MiddlewareResolver, so aliases work identically in
     | 'global', a route group, or a single route.
     */
     'aliases' => [

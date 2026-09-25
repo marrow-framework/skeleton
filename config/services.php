@@ -9,13 +9,13 @@ return [
     | Outbound HTTP client defaults
     |--------------------------------------------------------------------------
     | Passed straight to Symfony\Component\HttpClient\HttpClient::create()
-    | when the framework builds the shared Ironflow\Http\HttpClient service.
+    | when the framework builds the shared Marrow\Http\HttpClient service.
     | Per-call overrides (timeout, headers, retries, ...) are still available
     | fluently — see docs/http-client.md.
     */
     'http' => [
         // 'timeout' => 10,
-        // 'headers' => ['User-Agent' => 'IronFlow-App/1.0'],
+        // 'headers' => ['User-Agent' => 'Marrow-App/1.0'],
     ],
 
     /*

@@ -22,11 +22,11 @@ afterEach(function () {
 
 test('without a running Vite dev server, the poll script is injected and reacts to file changes', function () {
     $body = (string) $this->get('/')->getContent();
-    expect($body)->toContain('/__ironflow/ping');
+    expect($body)->toContain('/__marrow/ping');
 
-    $hashBefore = json_decode((string) $this->get('/__ironflow/ping')->getContent(), true)['hash'];
+    $hashBefore = json_decode((string) $this->get('/__marrow/ping')->getContent(), true)['hash'];
     touch($this->cssFile, time() + 1);
-    $hashAfter = json_decode((string) $this->get('/__ironflow/ping')->getContent(), true)['hash'];
+    $hashAfter = json_decode((string) $this->get('/__marrow/ping')->getContent(), true)['hash'];
 
     expect($hashAfter)->not->toBe($hashBefore);
 });
@@ -35,10 +35,10 @@ test('while Vite is running, HotReloadMiddleware steps aside entirely', function
     file_put_contents($this->hotFile, 'http://localhost:5173');
 
     $body = (string) $this->get('/')->getContent();
-    expect($body)->not->toContain('/__ironflow/ping');
+    expect($body)->not->toContain('/__marrow/ping');
 
     // The path is no longer intercepted by the middleware, so it falls
     // through to routing — which has no such route registered.
-    $response = $this->get('/__ironflow/ping');
+    $response = $this->get('/__marrow/ping');
     expect($response->getStatusCode())->toBe(404);
 });
