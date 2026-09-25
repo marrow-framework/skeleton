@@ -1,0 +1,54 @@
+{
+    "name": "ironflow-framework/skeleton",
+    "description": "The skeleton application for the IronFlow HMVC framework.",
+    "type": "project",
+    "license": "MIT",
+    "keywords": ["framework", "ironflow", "hmvc"],
+    "homepage": "https://github.com/ironflow-framework/skeleton",
+    "support": {
+        "issues": "https://github.com/ironflow-framework/skeleton/issues",
+        "source": "https://github.com/ironflow-framework/skeleton"
+    },
+    "require": {
+        "php": ">=8.2",
+        "ironflow-framework/framework": "^2.3"
+    },
+    "require-dev": {
+        "pestphp/pest": "^3.8",
+        "phpstan/phpstan": "^2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Modules\\": "modules/",
+            "Database\\Seeders\\": "database/seeders/",
+            "Database\\Factories\\": "database/factories/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+            "@php forge key:generate"
+        ],
+        "test": "pest",
+        "analyse": "phpstan analyse --memory-limit=256M",
+        "serve": "php forge serve"
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        },
+        "platform": {
+            "php": "8.2.0"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

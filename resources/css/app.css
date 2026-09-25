@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/*
+|--------------------------------------------------------------------------
+| Base layer
+|--------------------------------------------------------------------------
+| Shared reset + defaults every page inherits from layouts/app.html.twig.
+| Plain CSS mixes fine with Tailwind's utility classes — most page-specific
+| styling should just be Tailwind classes in the Twig templates themselves
+| rather than added here.
+*/
+:root {
+    color-scheme: light dark;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: #0b0d11;
+    color: #e2e8f0;
+    line-height: 1.5;
+}
+
+a {
+    color: #fb923c; /* orange-400 — the framework's brand accent ("forge orange") */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+code {
+    background: #181b22;
+    border: 1px solid #252a38;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 0.9em;
+    font-family: "SF Mono", "Cascadia Code", "Fira Code", monospace;
+}

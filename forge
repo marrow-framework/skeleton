@@ -1,0 +1,27 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+/*
+|--------------------------------------------------------------------------
+| The forge CLI entry point
+|--------------------------------------------------------------------------
+|
+| This is the console entry point for IronFlow — the equivalent of
+| Laravel's `artisan` or AdonisJS's `ace`. It boots the Application in
+| console mode, which registers every framework command plus any command
+| declared by an enabled module's #[Module(commands: [...])] attribute,
+| then hands off to Symfony Console.
+|
+| Usage:
+|   php forge list
+|   php forge make:controller PostController --module=Blog
+|   php forge migrate
+|   php forge serve
+|
+*/
+
+require __DIR__ . '/vendor/autoload.php';
+
+(require __DIR__ . '/bootstrap/app.php')->runConsole();

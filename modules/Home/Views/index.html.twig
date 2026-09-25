@@ -1,0 +1,58 @@
+{% extends "layouts/app.html.twig" %}
+
+{% block title %}{{ appName }}{% endblock %}
+
+{% block body %}
+<div class="flex min-h-screen flex-col items-center justify-center px-6 py-16 text-center">
+
+    <p class="mb-8 text-xs font-medium uppercase tracking-widest text-slate-500">
+        IronFlow · v{{ version }} · {{ environment }}
+    </p>
+
+    <div class="w-full max-w-lg overflow-hidden rounded-xl border border-slate-800 bg-slate-900 text-left shadow-2xl shadow-black/40">
+        <div class="flex items-center gap-3 border-b border-slate-800 bg-slate-950/60 px-4 py-3">
+            <div class="flex gap-1.5">
+                <span class="h-2.5 w-2.5 rounded-full bg-red-500/70"></span>
+                <span class="h-2.5 w-2.5 rounded-full bg-amber-400/70"></span>
+                <span class="h-2.5 w-2.5 rounded-full bg-emerald-500/70"></span>
+            </div>
+            <div class="flex flex-1 items-center gap-1.5 rounded-md bg-slate-800/80 px-3 py-1.5">
+                <svg viewBox="0 0 20 20" fill="currentColor" class="h-3 w-3 shrink-0 text-slate-500">
+                    <path fill-rule="evenodd" d="M10 1a4 4 0 0 0-4 4v2H5a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V5a4 4 0 0 0-4-4Zm2 6V5a2 2 0 1 0-4 0v2h4Z" clip-rule="evenodd" />
+                </svg>
+                <span class="truncate text-xs text-slate-400">{{ host }}</span>
+            </div>
+        </div>
+        <div class="flex flex-col items-center gap-3 px-8 py-14 text-center">
+            <span class="text-base font-bold tracking-tight text-slate-100">
+                <span class="text-orange-400">Iron</span>Flow
+            </span>
+            <h1 class="text-2xl font-semibold text-slate-50 sm:text-3xl">{{ appName }} is running.</h1>
+            <span class="mt-1 inline-flex items-center gap-1.5 rounded-full bg-emerald-400/10 px-3 py-1 text-xs font-medium text-emerald-400">
+                <span class="relative flex h-1.5 w-1.5">
+                    <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
+                </span>
+                Server ready
+            </span>
+        </div>
+    </div>
+
+    <p class="mt-6 max-w-md text-sm text-slate-400">
+        A fresh IronFlow application. Edit <code>modules/Home/Views/index.html.twig</code> to get started.
+    </p>
+
+    {% if debug %}
+    <p class="mt-4 text-xs text-amber-400">⚠ <code>APP_DEBUG</code> is on — turn it off before deploying.</p>
+    {% endif %}
+
+    <div class="mt-10 flex flex-wrap items-center justify-center gap-2 text-sm text-slate-400">
+        <a href="https://github.com/ironflow-framework/framework#readme" class="hover:text-orange-300">Documentation</a>
+        <span class="text-slate-700">·</span>
+        <a href="{{ route('health') }}" class="hover:text-orange-300">/health</a>
+        <span class="text-slate-700">·</span>
+        <a href="https://github.com/ironflow-framework/framework" class="hover:text-orange-300">GitHub</a>
+    </div>
+
+</div>
+{% endblock %}

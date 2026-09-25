@@ -40,7 +40,7 @@ Visit `http://localhost:8080`.
 | `bin/server.php` | Router used by `php forge serve` / `php -S` |
 | `config/` | One file per subsystem — see [Configuration](https://github.com/ironflow-framework/framework/blob/main/docs/configuration.md) |
 | `modules/Account/` | Owns the `User` model, RBAC/2FA/audit-log migrations, and the roles seeder — no routes of its own |
-| `modules/Home/` | A minimal working HMVC module (`/`, `/health`, and `/contact` — a real working example of `ironflow-framework/form-builder`) |
+| `modules/Home/` | A minimal working HMVC module (`/` and `/health`) |
 | `database/migrations/` | Queue + notifications tables (framework infrastructure, not owned by any one module) |
 | `database/seeders/` | The master `DatabaseSeeder`, which delegates to `Account`'s own seeder |
 | `resources/views/` | Twig templates — only `layouts/` ships by default; `errors`/`components`/`partials`/`emails` are auto-registered as Twig namespaces the moment you create them |
@@ -79,6 +79,22 @@ Then enable it in `config/modules.php`:
     \Modules\Blog\BlogModule::class,
 ],
 ```
+
+## Optional packages
+
+This skeleton ships with just the framework itself — nothing else is
+bundled by default, so `composer install` stays fast and the dependency
+tree stays small. Add any of these yourself when you actually need them:
+
+```bash
+composer require ironflow-framework/form-builder        # Django-style backend forms
+composer require --dev ironflow-framework/anvil          # Docker Compose dev environment
+composer require --dev ironflow-framework/compass         # generates AGENTS.md for AI coding agents
+```
+
+Each registers itself automatically on install (package auto-discovery —
+see [Modules](https://github.com/ironflow-framework/framework/blob/main/docs/modules.md#distributing-a-module-as-a-package)),
+no config edit needed. See each package's own README for usage.
 
 ## Documentation
 
