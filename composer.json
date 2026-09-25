@@ -9,19 +9,11 @@
         "issues": "https://github.com/marrow/skeleton/issues",
         "source": "https://github.com/marrow/skeleton"
     },
-    "repositories": [
-        {"type": "path", "url": "../framework", "options": {"symlink": true}},
-        {"type": "path", "url": "../packages/anvil", "options": {"symlink": true}},
-        {"type": "path", "url": "../packages/compass", "options": {"symlink": true}},
-        {"type": "path", "url": "../packages/form-builder", "options": {"symlink": true}}
-    ],
     "require": {
         "php": ">=8.2",
-        "marrow/framework": "*@dev"
+        "marrow/framework": "^2.3"
     },
     "require-dev": {
-        "marrow/anvil": "*@dev",
-        "marrow/compass": "*@dev",
         "pestphp/pest": "^3.8",
         "phpstan/phpstan": "^2.2"
     },
