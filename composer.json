@@ -4,10 +4,10 @@
     "type": "project",
     "license": "MIT",
     "keywords": ["framework", "marrow", "hmvc"],
-    "homepage": "https://github.com/marrow/skeleton",
+    "homepage": "https://github.com/marrow-framework/skeleton",
     "support": {
-        "issues": "https://github.com/marrow/skeleton/issues",
-        "source": "https://github.com/marrow/skeleton"
+        "issues": "https://github.com/marrow-framework/skeleton/issues",
+        "source": "https://github.com/marrow-framework/skeleton"
     },
     "require": {
         "php": ">=8.2",

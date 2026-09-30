@@ -2,7 +2,7 @@
 
 # Marrow Skeleton
 
-The starter application skeleton for the [Marrow](https://github.com/marrow/framework) HMVC framework.
+The starter application skeleton for the [Marrow](https://github.com/marrow-framework/core) HMVC framework.
 
 </div>
 
@@ -38,13 +38,13 @@ Visit `http://localhost:8080`.
 | `public/index.php` | HTTP front controller — point your web server here |
 | `forge` | Console entry point (`php forge list`) |
 | `bin/server.php` | Router used by `php forge serve` / `php -S` |
-| `config/` | One file per subsystem — see [Configuration](https://github.com/marrow/framework/blob/main/docs/configuration.md) |
+| `config/` | One file per subsystem — see [Configuration](https://github.com/marrow-framework/core/blob/main/docs/configuration.md) |
 | `modules/Account/` | Owns the `User` model, RBAC/2FA/audit-log migrations, and the roles seeder — no routes of its own |
 | `modules/Home/` | A minimal working HMVC module (`/` and `/health`) |
 | `database/migrations/` | Queue + notifications tables (framework infrastructure, not owned by any one module) |
 | `database/seeders/` | The master `DatabaseSeeder`, which delegates to `Account`'s own seeder |
 | `resources/views/` | Twig templates — only `layouts/` ships by default; `errors`/`components`/`partials`/`emails` are auto-registered as Twig namespaces the moment you create them |
-| `resources/{css,js}/`, `vite.config.js`, `package.json` | Vite + Tailwind CSS v4 build pipeline — see [Frontend Assets](https://github.com/marrow/framework/blob/main/docs/frontend.md) |
+| `resources/{css,js}/`, `vite.config.js`, `package.json` | Vite + Tailwind CSS v4 build pipeline — see [Frontend Assets](https://github.com/marrow-framework/core/blob/main/docs/frontend.md) |
 | `tests/` | Pest, wired to boot the real `Application` and dispatch through `Http\Kernel` |
 
 > **There is no `app/` directory, and that's deliberate.** Authentication
@@ -53,7 +53,7 @@ Visit `http://localhost:8080`.
 > Every `make:*` generator still defaults to `app/...` when `--module` is
 > omitted and creates that directory itself on demand
 > (`@mkdir(..., 0755, true)` before writing) — see
-> [The `forge` CLI](https://github.com/marrow/framework/blob/main/docs/cli.md#default-output-paths)
+> [The `forge` CLI](https://github.com/marrow-framework/core/blob/main/docs/cli.md#default-output-paths)
 > for the exact default path each one writes to — but nothing forces you to use it.
 > Prefer `--module=Name` for anything that belongs to a specific domain,
 > the way `Account` and `Home` do here.
@@ -93,14 +93,14 @@ composer require --dev marrow/compass         # generates AGENTS.md for AI codin
 ```
 
 Each registers itself automatically on install (package auto-discovery —
-see [Modules](https://github.com/marrow/framework/blob/main/docs/modules.md#distributing-a-module-as-a-package)),
+see [Modules](https://github.com/marrow-framework/core/blob/main/docs/modules.md#distributing-a-module-as-a-package)),
 no config edit needed. See each package's own README for usage.
 
 ## Documentation
 
 Full framework documentation lives in the
-[framework repository's `docs/`](https://github.com/marrow/framework/tree/main/docs),
-starting with [Getting Started](https://github.com/marrow/framework/blob/main/docs/getting-started.md).
+[framework repository's `docs/`](https://github.com/marrow-framework/core/tree/main/docs),
+starting with [Getting Started](https://github.com/marrow-framework/core/blob/main/docs/getting-started.md).
 
 ## License
 
