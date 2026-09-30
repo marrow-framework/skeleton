@@ -36,6 +36,8 @@ scaffolded with `composer create-project marrow/skeleton`.
   section.
 - **Composer dependency caching** in every CI job (`actions/cache` keyed on
   `composer.lock`), cutting `composer install` time on repeat runs.
+- **`composer.json` `authors`** — credits the maintainer, matching every
+  other Marrow repository; previously only `marrow/framework` declared one.
 
 ### Changed
 
@@ -57,6 +59,16 @@ scaffolded with `composer create-project marrow/skeleton`.
   could never resolve dependencies at all. Relaxed to `^2.2`, the newest
   version actually installable today. Bump this back to `^2.3` once that
   version is genuinely released.
+- **`composer install`/`composer dump-autoload -o` printed eight PSR-4
+  compliance warnings** ("Class ... does not comply with psr-4 autoloading
+  standard (rule: Modules\\ => ./modules). Skipping.") for every migration
+  under `modules/Account/Database/Migrations/`. Those classes are
+  deliberately namespace-less — the migrator loads them by file path, not
+  autoloading — but they still live under the `Modules\` PSR-4 root, so
+  `optimize-autoloader`'s classmap scan flagged every one of them. Added
+  `"exclude-from-classmap": ["modules/*/Database/Migrations/"]` to
+  `autoload`, which covers any future module's migrations too, not just
+  `Account`'s.
 
 ## [1.0.0] - 2026-09-25
 
