@@ -4,10 +4,10 @@
     "type": "project",
     "license": "MIT",
     "keywords": ["framework", "marrow", "hmvc"],
-    "homepage": "https://github.com/marrow/skeleton",
+    "homepage": "https://github.com/marrow-framework/skeleton",
     "support": {
-        "issues": "https://github.com/marrow/skeleton/issues",
-        "source": "https://github.com/marrow/skeleton"
+        "issues": "https://github.com/marrow-framework/skeleton/issues",
+        "source": "https://github.com/marrow-framework/skeleton"
     },
     "require": {
         "php": ">=8.2",
@@ -16,6 +16,11 @@
     "require-dev": {
         "pestphp/pest": "^3.8",
         "phpstan/phpstan": "^2.2"
+    },
+    "suggest": {
+        "marrow/form-builder": "Django-style declarative backend forms, validated with the framework's own rule engine",
+        "marrow/anvil": "Local Docker Compose development environment (dev)",
+        "marrow/compass": "Generates AGENTS.md, a live map of the app for AI coding agents and contributors (dev)"
     },
     "autoload": {
         "psr-4": {
