@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-use Ironflow\Database\Migrations\Migration;
-use Ironflow\Database\Schema\Schema;
-use Ironflow\Database\Schema\Table;
+use Marrow\Database\Migrations\Migration;
+use Marrow\Database\Schema\Schema;
+use Marrow\Database\Schema\Table;
 
 /**
- * Backs Ironflow\Auth\RBAC\Role — read/written with raw SQL by that class
+ * Backs Marrow\Auth\RBAC\Role — read/written with raw SQL by that class
  * and by the HasRole trait, not through the Model/ORM layer.
  */
 class CreateRolesTable extends Migration

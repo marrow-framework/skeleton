@@ -16,6 +16,6 @@ declare(strict_types=1);
 | Callers must require vendor/autoload.php before this file.
 */
 
-use Ironflow\Application;
+use Marrow\Application;
 
 return new Application(dirname(__DIR__));

@@ -56,7 +56,7 @@ return [
     | 'csrf_except' => ['api/*', 'webhooks/*'],
     */
     'csrf_except' => [
-        '__ironflow/*',
+        '__marrow/*',
     ],
 
 ];

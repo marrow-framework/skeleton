@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Home;
 
-use Ironflow\Module\Attributes\Module;
-use Ironflow\Module\BaseModule;
+use Marrow\Module\Attributes\Module;
+use Marrow\Module\BaseModule;
 
 /**
  * The default landing-page module, enabled out of the box in

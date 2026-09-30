@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Account\Database\Seeders;
 
-use Ironflow\Auth\RBAC\Permission;
-use Ironflow\Auth\RBAC\Role;
-use Ironflow\Database\Seeder;
+use Marrow\Auth\RBAC\Permission;
+use Marrow\Auth\RBAC\Role;
+use Marrow\Database\Seeder;
 
 /**
  * Seeds the baseline RBAC roles (admin/editor/viewer). 'admin' matches
@@ -15,7 +15,7 @@ use Ironflow\Database\Seeder;
  * attached to it for that reason, but a few are given here anyway so
  * `php forge tinker` has something to inspect.
  *
- * Note: the base Ironflow\Database\Seeder has no output()/info() helper —
+ * Note: the base Marrow\Database\Seeder has no output()/info() helper —
  * plain echo is the convention framework-wide seeders use.
  */
 class RolesTableSeeder extends Seeder

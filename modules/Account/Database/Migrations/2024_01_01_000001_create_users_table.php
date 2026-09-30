@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-use Ironflow\Database\Migrations\Migration;
-use Ironflow\Database\Schema\Schema;
-use Ironflow\Database\Schema\Table;
+use Marrow\Database\Migrations\Migration;
+use Marrow\Database\Schema\Schema;
+use Marrow\Database\Schema\Table;
 
 /**
  * The base `users` table — required by both the session and JWT auth guards

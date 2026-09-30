@@ -25,7 +25,7 @@ return [
     */
     'from' => [
         'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'IronFlow'),
+        'name' => env('MAIL_FROM_NAME', 'Marrow'),
     ],
 
 ];

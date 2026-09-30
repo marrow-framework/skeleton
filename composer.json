@@ -1,17 +1,17 @@
 {
-    "name": "ironflow-framework/skeleton",
-    "description": "The skeleton application for the IronFlow HMVC framework.",
+    "name": "marrow/skeleton",
+    "description": "The skeleton application for the Marrow HMVC framework.",
     "type": "project",
     "license": "MIT",
-    "keywords": ["framework", "ironflow", "hmvc"],
-    "homepage": "https://github.com/ironflow-framework/skeleton",
+    "keywords": ["framework", "marrow", "hmvc"],
+    "homepage": "https://github.com/marrow/skeleton",
     "support": {
-        "issues": "https://github.com/ironflow-framework/skeleton/issues",
-        "source": "https://github.com/ironflow-framework/skeleton"
+        "issues": "https://github.com/marrow/skeleton/issues",
+        "source": "https://github.com/marrow/skeleton"
     },
     "require": {
         "php": ">=8.2",
-        "ironflow-framework/framework": "^2.3"
+        "marrow/framework": "^2.3"
     },
     "require-dev": {
         "pestphp/pest": "^3.8",

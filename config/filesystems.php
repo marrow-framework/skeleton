@@ -15,7 +15,7 @@ return [
     |--------------------------------------------------------------------------
     | Disks
     |--------------------------------------------------------------------------
-    | Each disk is a league/flysystem adapter behind Ironflow\Filesystem\Storage.
+    | Each disk is a league/flysystem adapter behind Marrow\Filesystem\Storage.
     | 'local'  — private files, not web-accessible directly.
     | 'public' — files served back out under APP_URL/storage/...
     | 's3'     — requires: composer require league/flysystem-aws-s3-v3
