@@ -47,6 +47,16 @@ scaffolded with `composer create-project marrow/skeleton`.
   match core's when that fix originally shipped; this release brings it back
   to parity.
 
+### Fixed
+
+- **`composer.json` required `marrow/framework: ^2.3`, but only `2.2.0` is
+  published on Packagist** — `2.3.0` exists as a tag in the core repository
+  but was never pushed/released to Packagist, so a fresh
+  `composer create-project marrow/skeleton` (and this repository's own CI)
+  could never resolve dependencies at all. Relaxed to `^2.2`, the newest
+  version actually installable today. Bump this back to `^2.3` once that
+  version is genuinely released.
+
 ## [1.0.0] - 2026-09-25
 
 Initial stable release of the skeleton (originally scaffolded under the
