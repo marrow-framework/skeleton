@@ -4,6 +4,10 @@
 
 The starter application skeleton for the [Marrow](https://github.com/marrow-framework/core) HMVC framework.
 
+[![CI](https://img.shields.io/github/actions/workflow/status/marrow-framework/skeleton/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/marrow-framework/skeleton/actions/workflows/ci.yml)
+[![PHP 8.2+](https://img.shields.io/badge/PHP-8.2%2B-777BB4?style=flat-square&logo=php&logoColor=white)](https://php.net)
+[![License MIT](https://img.shields.io/badge/license-MIT-22c55e?style=flat-square)](LICENSE)
+
 </div>
 
 ---
@@ -101,6 +105,10 @@ no config edit needed. See each package's own README for usage.
 Full framework documentation lives in the
 [framework repository's `docs/`](https://github.com/marrow-framework/core/tree/main/docs),
 starting with [Getting Started](https://github.com/marrow-framework/core/blob/main/docs/getting-started.md).
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 
