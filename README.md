@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="https://raw.githubusercontent.com/marrow-framework/.github/main/marrow-logo-mark.svg" alt="Marrow" width="120">
+
 # Marrow Skeleton
 
 The starter application skeleton for the [Marrow](https://github.com/marrow-framework/core) HMVC framework.
@@ -93,7 +95,7 @@ tree stays small. Add any of these yourself when you actually need them:
 ```bash
 composer require marrow/form-builder        # Django-style backend forms
 composer require --dev marrow/anvil          # Docker Compose dev environment
-composer require --dev marrow/compass         # generates AGENTS.md for AI coding agents
+composer require --dev marrow/ai-context     # generates AGENTS.md for AI coding agents
 ```
 
 Each registers itself automatically on install (package auto-discovery —
@@ -113,3 +115,11 @@ See [CHANGELOG.md](CHANGELOG.md).
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+---
+
+<div align="center">
+
+Made with ❤️ by [Aure Dulvresse](https://github.com/AureDulvresse)
+
+</div>

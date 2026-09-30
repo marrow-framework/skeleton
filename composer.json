@@ -20,7 +20,7 @@
     "suggest": {
         "marrow/form-builder": "Django-style declarative backend forms, validated with the framework's own rule engine",
         "marrow/anvil": "Local Docker Compose development environment (dev)",
-        "marrow/compass": "Generates AGENTS.md, a live map of the app for AI coding agents and contributors (dev)"
+        "marrow/ai-context": "Generates AGENTS.md, a live map of the app for AI coding agents and contributors (dev)"
     },
     "autoload": {
         "psr-4": {
