@@ -30,9 +30,10 @@ scaffolded with `composer create-project marrow/skeleton`.
   Tailwind grouped into one PR), and `github-actions`. Targets `develop`,
   matching the branch strategy already in place.
 - **`composer.json` `suggest`** — `marrow/form-builder`, `marrow/anvil`, and
-  `marrow/compass` are now declared as suggested packages, so they show up on
-  the package's Packagist page and in `composer suggests`, instead of being
-  discoverable only by reading the README's "Optional packages" section.
+  `marrow/ai-context` are now declared as suggested packages, so they show up
+  on the package's Packagist page and in `composer suggests`, instead of
+  being discoverable only by reading the README's "Optional packages"
+  section.
 - **Composer dependency caching** in every CI job (`actions/cache` keyed on
   `composer.lock`), cutting `composer install` time on repeat runs.
 
