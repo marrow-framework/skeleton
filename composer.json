@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": ">=8.2",
-        "marrow/framework": "^2.2"
+        "marrow/framework": "^2.3"
     },
     "require-dev": {
         "pestphp/pest": "^3.8",

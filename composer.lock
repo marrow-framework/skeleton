@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a29cf4789ee378104ac4322d68f6d646",
+    "content-hash": "9e43ae6a580add6e377064d25c19ca17",
     "packages": [
         {
             "name": "doctrine/dbal",
@@ -162,16 +162,16 @@
         },
         {
             "name": "doctrine/lexer",
-            "version": "3.0.2",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/lexer.git",
-                "reference": "e96fe45e92a54233726014a7cc7340abf29bb14c"
+                "reference": "71d305eaa6480d3d3460c7d053d1da7749fa9cca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/lexer/zipball/e96fe45e92a54233726014a7cc7340abf29bb14c",
-                "reference": "e96fe45e92a54233726014a7cc7340abf29bb14c",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/71d305eaa6480d3d3460c7d053d1da7749fa9cca",
+                "reference": "71d305eaa6480d3d3460c7d053d1da7749fa9cca",
                 "shasum": ""
             },
             "require": {
@@ -217,7 +217,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/lexer/issues",
-                "source": "https://github.com/doctrine/lexer/tree/3.0.2"
+                "source": "https://github.com/doctrine/lexer/tree/3.0.3"
             },
             "funding": [
                 {
@@ -233,7 +233,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-06-14T20:44:06+00:00"
+            "time": "2026-10-01T06:59:29+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -691,16 +691,16 @@
         },
         {
             "name": "marrow/framework",
-            "version": "v2.2.1",
+            "version": "v2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/marrow-framework/core.git",
-                "reference": "3fe544a42ebd43e383e1eca414a9a9a72a8f73a8"
+                "reference": "9d6cc9a7d975d335f83c8cdf5c2974f4e0d43874"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/marrow-framework/core/zipball/3fe544a42ebd43e383e1eca414a9a9a72a8f73a8",
-                "reference": "3fe544a42ebd43e383e1eca414a9a9a72a8f73a8",
+                "url": "https://api.github.com/repos/marrow-framework/core/zipball/9d6cc9a7d975d335f83c8cdf5c2974f4e0d43874",
+                "reference": "9d6cc9a7d975d335f83c8cdf5c2974f4e0d43874",
                 "shasum": ""
             },
             "require": {
@@ -768,7 +768,7 @@
                 "issues": "https://github.com/marrow-framework/core/issues",
                 "source": "https://github.com/marrow-framework/core"
             },
-            "time": "2026-09-30T16:18:27+00:00"
+            "time": "2026-10-01T11:20:26+00:00"
         },
         {
             "name": "monolog/monolog",
