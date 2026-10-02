@@ -22,12 +22,26 @@ return [
     |--------------------------------------------------------------------------
     | Third-party service credentials
     |--------------------------------------------------------------------------
-    | Conventional home for API keys/secrets used by your own integrations —
-    | nothing in the framework core reads this array besides 'http' above.
+    | Conventional home for API keys/secrets used by your own integrations.
+    | Two framework primitives read this block by convention (nothing reads
+    | it automatically — you opt in per service):
+    |
+    |   - Marrow\Support\ServiceIntegration (a base class for wrapping a
+    |     service as one container-bound class) reads 'base_uri' and
+    |     'secret' (as a bearer token) via its http() helper.
+    |   - The 'webhook' middleware alias (Marrow\Middleware\
+    |     VerifyWebhookSignature, ->middleware('webhook:stripe')) reads
+    |     'webhook_secret'/'webhook_header'/'webhook_timestamped'/
+    |     'webhook_tolerance' to verify an inbound webhook's signature.
+    |
+    | See docs/integrations.md.
     |
     | 'stripe' => [
-    |     'key'    => env('STRIPE_KEY'),
-    |     'secret' => env('STRIPE_SECRET'),
+    |     'base_uri'       => 'https://api.stripe.com/v1/',
+    |     'secret'         => env('STRIPE_SECRET'),
+    |     'webhook_secret' => env('STRIPE_WEBHOOK_SECRET'),
+    |     'webhook_header' => 'Stripe-Signature',
+    |     'webhook_timestamped' => true,
     | ],
     */
 
