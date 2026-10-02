@@ -20,8 +20,10 @@
         "marrow/framework": "^2.3"
     },
     "require-dev": {
+        "fakerphp/faker": "^1.23",
         "pestphp/pest": "^3.8",
-        "phpstan/phpstan": "^2.2"
+        "phpstan/phpstan": "^2.2",
+        "psy/psysh": "^0.12.23"
     },
     "suggest": {
         "marrow/ui": "Tailwind + Alpine.js component library — Button, Card, Select, Form, a Sonner-style toaster, and more",
