@@ -14,6 +14,7 @@ use Marrow\Middleware\StartSession;
 use Marrow\Middleware\ThrottleRequests;
 use Marrow\Middleware\TrimStrings;
 use Marrow\Middleware\VerifyCsrfToken;
+use Marrow\Middleware\VerifyWebhookSignature;
 
 return [
 
@@ -45,6 +46,7 @@ return [
         'guest' => RedirectIfAuthenticated::class,
         'throttle' => ThrottleRequests::class,
         'csrf' => VerifyCsrfToken::class,
+        'webhook' => VerifyWebhookSignature::class,
         'cors' => HandleCors::class,
         'sanitize' => SanitizeInput::class,
         'session' => StartSession::class,
