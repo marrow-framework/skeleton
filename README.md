@@ -24,12 +24,15 @@ The starter application skeleton for the [Marrow](https://github.com/marrow-fram
 ```bash
 composer create-project marrow/skeleton my-app
 cd my-app
+```
 
-cp .env.example .env
-php forge key:generate
+That's it to get a configured `.env` (with `APP_KEY` already generated) — `create-project` also runs an
+interactive setup wizard asking your app's name/environment, offering to migrate (+ seed) now, and — only for
+whichever optional packages you actually installed — offering to run `ui:install`/`anvil:install`/
+`warden:install` too. Re-run it any time with `composer run install-wizard`; it's skipped automatically in a
+non-interactive/CI install.
 
-php forge migrate --seed
-
+```bash
 npm install
 composer run dev   # PHP server + Vite dev server together, both logging to this terminal
 ```

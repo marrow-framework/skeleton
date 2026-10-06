@@ -15,7 +15,9 @@ return [
     |--------------------------------------------------------------------------
     | Application version
     |--------------------------------------------------------------------------
-    | Shown by `php forge about` and used as the console app version.
+    | Your own app's version, shown by `php forge about` (next to the
+    | installed marrow/framework version, shown separately there and in the
+    | `php forge` CLI banner — that one is resolved from Composer, not here).
     */
     'version' => '0.1.0',
 
