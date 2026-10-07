@@ -10,9 +10,9 @@ use Marrow\Database\Connection;
 use Marrow\Database\Migrations\Migrator;
 use Marrow\Http\Kernel as HttpKernel;
 use Marrow\Http\Request;
+use Marrow\Http\Response;
 use Marrow\Module\ModuleManager;
 use PHPUnit\Framework\TestCase as BaseTestCase;
-use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Boots the real Application (config, container, modules) once for the whole

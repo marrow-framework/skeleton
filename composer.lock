@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dfc0a5931b09e63e873849c7eec9a543",
+    "content-hash": "0b7637dadecd16d68af0d1612c5e93ee",
     "packages": [
         {
             "name": "doctrine/dbal",
@@ -628,16 +628,16 @@
         },
         {
             "name": "marrow/framework",
-            "version": "v2.4.1",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/marrow-framework/core.git",
-                "reference": "609296125d3b2956745da05a8b55760fbbe0d332"
+                "reference": "530579d6e8ba449155f085f8e0a942fff293282b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/marrow-framework/core/zipball/609296125d3b2956745da05a8b55760fbbe0d332",
-                "reference": "609296125d3b2956745da05a8b55760fbbe0d332",
+                "url": "https://api.github.com/repos/marrow-framework/core/zipball/530579d6e8ba449155f085f8e0a942fff293282b",
+                "reference": "530579d6e8ba449155f085f8e0a942fff293282b",
                 "shasum": ""
             },
             "require": {
@@ -707,7 +707,7 @@
                 "issues": "https://github.com/marrow-framework/core/issues",
                 "source": "https://github.com/marrow-framework/core"
             },
-            "time": "2026-10-02T12:14:39+00:00"
+            "time": "2026-10-07T13:20:07+00:00"
         },
         {
             "name": "monolog/monolog",

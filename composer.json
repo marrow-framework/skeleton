@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": ">=8.2",
-        "marrow/framework": "^2.4"
+        "marrow/framework": "^3.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -51,8 +51,10 @@
     "scripts": {
         "post-create-project-cmd": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
-            "@php forge key:generate"
+            "@php forge key:generate",
+            "@php bin/install.php"
         ],
+        "install-wizard": "@php bin/install.php",
         "test": "pest",
         "analyse": "phpstan analyse --memory-limit=256M",
         "serve": "php forge serve",
