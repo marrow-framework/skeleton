@@ -31,10 +31,15 @@ php forge key:generate
 php forge migrate --seed
 
 npm install
-php forge serve --watch-css   # PHP server + Vite dev server together
+composer run dev   # PHP server + Vite dev server together, both logging to this terminal
 ```
 
 Visit `http://localhost:8080`.
+
+`composer run dev` runs `php forge serve` and `npm run dev` concurrently (via `concurrently`, labeled
+`server`/`vite`). `php forge serve --watch-css` is the single-process alternative (no Node dependency beyond
+`npm install` itself), but it starts Vite as a silent background process — nothing it prints (including a
+build error) reaches your terminal.
 
 ## What's included
 

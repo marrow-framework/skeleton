@@ -55,7 +55,11 @@
         ],
         "test": "pest",
         "analyse": "phpstan analyse --memory-limit=256M",
-        "serve": "php forge serve"
+        "serve": "php forge serve",
+        "dev": [
+            "Composer\\Config::disableProcessTimeout",
+            "npx concurrently -c \"#fb923c,#38bdf8\" \"php forge serve\" \"npm run dev\" --names=server,vite --kill-others"
+        ]
     },
     "config": {
         "sort-packages": true,
